@@ -2,6 +2,14 @@ import { Helmet } from 'react-helmet'
 import { ArrowRight, Star, Users, Award, Truck, X } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import furniture1 from '../assets/furniture-1.jpeg'
+import furniture2 from '../assets/furniture-2.jpeg'
+import furniture3 from '../assets/furniture-3.jpeg'
+import furniture4 from '../assets/furniture-4.jpeg'
+import furniture5 from '../assets/furniture-5.jpeg'
+import furniture6 from '../assets/furniture-6.jpeg'
+import furniture7 from '../assets/furniture-7.jpeg'
+import furniture8 from '../assets/furniture-8.jpeg'
 
 const Home = () => {
   const [selectedImage, setSelectedImage] = useState(null)
@@ -32,35 +40,35 @@ const Home = () => {
   const products = [
     {
       name: "Furniture 1",
-      image: "/src/assets/furniture-1.jpeg"
+      image: furniture1
     },
     {
       name: "Furniture 2", 
-      image: "/src/assets/furniture-2.jpeg"
+      image: furniture2
     },
     {
       name: "Furniture 3",
-      image: "/src/assets/furniture-3.jpeg"
+      image: furniture3
     },
     {
       name: "Furniture 4",
-      image: "/src/assets/furniture-4.jpeg"
+      image: furniture4
     },
     {
       name: "Furniture 5",
-      image: "/src/assets/furniture-5.jpeg"
+      image: furniture5
     },
     {
       name: "Furniture 6",
-      image: "/src/assets/furniture-6.jpeg"
+      image: furniture6
     },
     {
       name: "Furniture 7",
-      image: "/src/assets/furniture-7.jpeg"
+      image: furniture7
     },
     {
       name: "Furniture 8",
-      image: "/src/assets/furniture-8.jpeg"
+      image: furniture8
     }
   ]
 
