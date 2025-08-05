@@ -8,11 +8,6 @@ const Footer = () => {
           {/* Company Info */}
           <div data-aos="fade-up">
             <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src="/public/WhatsApp Image 2025-08-04 at 3.20.32 PM.jpeg" 
-                alt="Wardhana Furniture" 
-                className="h-10 w-10 object-contain"
-              />
               <h3 className="text-xl font-bold">Wardhana Furniture</h3>
             </div>
             <p className="text-primary-200 mb-4">
