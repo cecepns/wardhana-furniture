@@ -1,91 +1,97 @@
-import { Helmet } from 'react-helmet'
-import { ArrowRight, Star, Users, Award, Truck, X } from 'lucide-react'
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
-import furniture1 from '../assets/furniture-1.jpeg'
-import furniture2 from '../assets/furniture-2.jpeg'
-import furniture3 from '../assets/furniture-3.jpeg'
-import furniture4 from '../assets/furniture-4.jpeg'
-import furniture5 from '../assets/furniture-5.jpeg'
-import furniture6 from '../assets/furniture-6.jpeg'
-import furniture7 from '../assets/furniture-7.jpeg'
-import furniture8 from '../assets/furniture-8.jpeg'
+import { Helmet } from "react-helmet";
+import { ArrowRight, Star, Users, Award, Truck, X } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import furniture1 from "../assets/furniture-1.png";
+import furniture2 from "../assets/furniture-2.png";
+import furniture3 from "../assets/furniture-3.png";
+import furniture4 from "../assets/furniture-4.png";
+import furniture5 from "../assets/furniture-5.png";
+import furniture6 from "../assets/furniture-6.png";
+import furniture7 from "../assets/furniture-7.png";
+import furniture8 from "../assets/furniture-8.jpg";
 
 const Home = () => {
-  const [selectedImage, setSelectedImage] = useState(null)
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const features = [
     {
       icon: <Star className="w-8 h-8" />,
       title: "Kualitas Premium",
-      description: "Menggunakan bahan berkualitas tinggi dan finishing terbaik"
+      description: "Menggunakan bahan berkualitas tinggi dan finishing terbaik",
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: "Pelayanan Terbaik",
-      description: "Tim profesional siap membantu kebutuhan furniture Anda"
+      description: "Tim profesional siap membantu kebutuhan furniture Anda",
     },
     {
       icon: <Award className="w-8 h-8" />,
       title: "Desain Modern",
-      description: "Desain contemporary yang mengikuti tren terkini"
+      description: "Desain contemporary yang mengikuti tren terkini",
     },
     {
       icon: <Truck className="w-8 h-8" />,
       title: "Pengiriman Aman",
-      description: "Pengiriman dengan packaging khusus untuk keamanan produk"
-    }
-  ]
+      description: "Pengiriman dengan packaging khusus untuk keamanan produk",
+    },
+  ];
 
   const products = [
     {
       name: "Furniture 1",
-      image: furniture1
+      image: furniture1,
     },
     {
-      name: "Furniture 2", 
-      image: furniture2
+      name: "Furniture 2",
+      image: furniture2,
     },
     {
       name: "Furniture 3",
-      image: furniture3
+      image: furniture3,
     },
     {
       name: "Furniture 4",
-      image: furniture4
+      image: furniture4,
     },
     {
       name: "Furniture 5",
-      image: furniture5
+      image: furniture5,
     },
     {
       name: "Furniture 6",
-      image: furniture6
+      image: furniture6,
     },
     {
       name: "Furniture 7",
-      image: furniture7
+      image: furniture7,
     },
     {
       name: "Furniture 8",
-      image: furniture8
-    }
-  ]
+      image: furniture8,
+    },
+  ];
 
   const openImageModal = (image) => {
-    setSelectedImage(image)
-  }
+    setSelectedImage(image);
+  };
 
   const closeImageModal = () => {
-    setSelectedImage(null)
-  }
+    setSelectedImage(null);
+  };
 
   return (
     <>
       <Helmet>
         <title>Wardhana Furniture - Furniture Berkualitas Tinggi</title>
-        <meta name="description" content="Wardhana Furniture menyediakan furniture berkualitas tinggi dengan desain modern dan elegan. Melayani area Sidoarjo dan sekitarnya." />
-        <meta name="keywords" content="furniture, mebel, sofa, meja, lemari, tempat tidur, sidoarjo, wardhana" />
+        <meta
+          name="description"
+          content="Wardhana Furniture menyediakan furniture berkualitas tinggi dengan desain modern dan elegan. Melayani area Sidoarjo dan sekitarnya."
+        />
+        <meta
+          name="keywords"
+          content="furniture, mebel, sofa, meja, lemari, tempat tidur, sidoarjo, wardhana"
+        />
       </Helmet>
 
       {/* Image Modal */}
@@ -114,12 +120,13 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <h1 className="text-4xl md:text-6xl font-bold text-primary-900 mb-6 leading-tight">
-                Furniture Berkualitas untuk Rumah Impian
+                Menyediakan Sofa Milenial dan Aesthetic sesuai dengan kebutuhan
+                anda
               </h1>
               <p className="text-lg text-primary-700 mb-8 leading-relaxed">
-                Wardhana Furniture hadir dengan koleksi furniture premium yang menggabungkan 
-                desain modern, kualitas terbaik, dan harga terjangkau untuk mewujudkan 
-                rumah impian Anda.
+                Wardhana Furniture hadir dengan koleksi furniture premium yang
+                menggabungkan desain modern, kualitas terbaik, dan harga
+                terjangkau untuk mewujudkan rumah impian Anda.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -131,7 +138,10 @@ const Home = () => {
                   Konsultasi Gratis
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
-                <Link to="/about" className="btn-secondary inline-flex items-center justify-center">
+                <Link
+                  to="/about"
+                  className="btn-secondary inline-flex items-center justify-center"
+                >
                   Tentang Kami
                 </Link>
               </div>
@@ -148,8 +158,12 @@ const Home = () => {
                     <Star className="w-6 h-6 text-primary-600" />
                   </div>
                   <div>
-                    <p className="font-semibold text-primary-900">Kualitas Terjamin</p>
-                    <p className="text-sm text-primary-600">Garansi & After Sales</p>
+                    <p className="font-semibold text-primary-900">
+                      Kualitas Terjamin
+                    </p>
+                    <p className="text-sm text-primary-600">
+                      Garansi & After Sales
+                    </p>
                   </div>
                 </div>
               </div>
@@ -166,11 +180,11 @@ const Home = () => {
               Mengapa Memilih Wardhana Furniture?
             </h2>
             <p className="text-lg text-primary-600 max-w-2xl mx-auto">
-              Kami berkomitmen memberikan yang terbaik dengan standar kualitas tinggi 
-              dan pelayanan yang memuaskan
+              Kami berkomitmen memberikan yang terbaik dengan standar kualitas
+              tinggi dan pelayanan yang memuaskan
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div
@@ -185,9 +199,7 @@ const Home = () => {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-primary-600">
-                  {feature.description}
-                </p>
+                <p className="text-primary-600">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -202,7 +214,8 @@ const Home = () => {
               Koleksi Furniture Kami
             </h2>
             <p className="text-lg text-primary-600 max-w-2xl mx-auto">
-              Berbagai pilihan furniture berkualitas dengan desain modern dan elegan
+              Berbagai pilihan furniture berkualitas dengan desain modern dan
+              elegan
             </p>
           </div>
 
@@ -214,7 +227,7 @@ const Home = () => {
                 data-aos-delay={index * 100}
                 className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105"
               >
-                <div 
+                <div
                   className="cursor-pointer"
                   onClick={() => openImageModal(product.image)}
                 >
@@ -252,7 +265,7 @@ const Home = () => {
               Siap Mewujudkan Rumah Impian Anda?
             </h2>
             <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-              Konsultasikan kebutuhan furniture Anda dengan tim ahli kami. 
+              Konsultasikan kebutuhan furniture Anda dengan tim ahli kami.
               Dapatkan penawaran terbaik dan solusi yang tepat.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -276,7 +289,7 @@ const Home = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
